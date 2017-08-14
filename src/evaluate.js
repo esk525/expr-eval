@@ -1,7 +1,5 @@
 import { INUMBER, IOP1, IOP2, IOP3, IVAR, IFUNCALL, IEXPR, IMEMBER } from './instruction';
 
-
-
 export default function evaluate(tokens, expr, values) {
   var nstack = [];
   var n1, n2, n3;
