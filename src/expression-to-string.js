@@ -18,7 +18,9 @@ export default function expressionToString(tokens, toJS) {
       n1 = nstack.pop();
       f = item.value;
       if (toJS) {
-        if (f === '^') {
+        if (f === 'd') {
+          nstack.push('roll(' + n1 + ', ' + n2 +')');
+        } else if (f === '^') {
           nstack.push('Math.pow(' + n1 + ', ' + n2 + ')');
         } else if (f === 'and') {
           nstack.push('(!!' + n1 + ' && !!' + n2 + ')');

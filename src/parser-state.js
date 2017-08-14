@@ -117,7 +117,7 @@ ParserState.prototype.parseComparison = function (instr) {
   }
 };
 
-var ADD_SUB_OPERATORS = ['+', '-', '||'];
+var ADD_SUB_OPERATORS = ['+', '-', '||', 'd'];
 
 ParserState.prototype.parseAddSub = function (instr) {
   this.parseTerm(instr);

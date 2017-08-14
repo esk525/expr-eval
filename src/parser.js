@@ -32,7 +32,8 @@ import {
   gamma,
   stringLength,
   hypot,
-  condition
+  condition,
+  roll
 } from './functions';
 
 export function Parser(options) {
@@ -82,6 +83,7 @@ export function Parser(options) {
     '<': lessThan,
     '>=': greaterThanEqual,
     '<=': lessThanEqual,
+    'd': roll,
     and: andOperator,
     or: orOperator
   };

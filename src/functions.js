@@ -205,3 +205,15 @@ export function hypot() {
 export function condition(cond, yep, nope) {
   return cond ? yep : nope;
 }
+
+export function roll(a, b) {
+  var l = Number(a);
+  var r = Number(b);
+
+  var t = 0;
+  for(var i = 0;i < l; i++){
+    t += (Math.floor(Math.random() * r)+1);
+  }
+
+  return t;
+}
